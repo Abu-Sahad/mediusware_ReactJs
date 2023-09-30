@@ -1,17 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import Problem1 from "./components/Problem-1.jsx";
+import Menu from "./components/Menu.jsx";
+import Problem2 from "./components/Problem-2.jsx";
+import Index from "./components/Index.jsx";
+import '../src/assets/scss/App.scss';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-     <h1 className='text-center'>this is for me here we go </h1>
-        
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/" element={<Menu />}>
+          <Route path="problem-1" element={<Problem1 />} />
+          <Route path="problem-2" element={<Problem2 />} />
+        </Route>
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
