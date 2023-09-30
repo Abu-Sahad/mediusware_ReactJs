@@ -106,14 +106,14 @@ const Problem2 = () => {
                                         <p>Id: {contact.id}</p>
                                         <p>Country Id: {contact.country.id}</p>
                                         <p>Country: {contact.country.name}</p>
-                                        <p>Phone: {contact.phone}</p>v
+                                        <p>Phone: {contact.phone}</p>
                                     </div>
                                 ))}
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary bg-1" onClick={openAllCloseUs}>All Contacts</button>
                                 <button type="button" className="btn btn-secondary bg-2" onClick={openUSCloseAll}>Us Contacts</button>
-                                <button type="button" className="btn btn-secondary bg-white border-1 text-black" onClick={closeAllContactsModal}>Close</button>
+                                <button type="button" className="btn btn-secondary bg-white border-1 text-black" onClick={closeUSContactsModal}>Close</button>
                             </div>
                         </div>
                     </div>
